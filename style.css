@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .traffic-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    width: 120px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .light {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+  }
+  
+  .light.red {
+    background-color: red;
+  }
+  
+  .light.yellow {
+    background-color: yellow;
+  }
+  
+  .light.green {
+    background-color: green;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
